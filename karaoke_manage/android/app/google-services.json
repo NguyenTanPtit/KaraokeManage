@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1069553329112",
+    "firebase_url": "https://kms-project-dinh-default-rtdb.firebaseio.com",
+    "project_id": "kms-project-dinh",
+    "storage_bucket": "kms-project-dinh.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069553329112:android:695292655e8bfafa7e88ad",
+        "android_client_info": {
+          "package_name": "com.nguyentan.karaoke_manage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069553329112-pd1d0482ci8hbe4sqvvp9gbj1g4lckf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGrjuIVRqfWXLDhc0GB2zwrtnTVOUYSUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069553329112-pd1d0482ci8hbe4sqvvp9gbj1g4lckf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
