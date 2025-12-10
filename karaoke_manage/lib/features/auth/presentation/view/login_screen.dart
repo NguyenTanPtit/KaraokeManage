@@ -42,7 +42,12 @@ class _LoginScreenState extends BaseStatefulWidgetState<LoginScreen> {
           if (state is AuthErrorState) {
             showAlertDialog(title: "Lỗi", content: state.error);
           } else if (state is AuthAuthenticatedState) {
-            Navigator.of(context).pushReplacementNamed('/home');
+            final role = state.user.role.toLowerCase();
+            if (role == 'admin' || role == 'manager' || role == 'cashier') {
+              Navigator.of(context).pushReplacementNamed('/manager_home');
+            } else {
+              Navigator.of(context).pushReplacementNamed('/staff_home');
+            }
           }
         },
         builder: (context, state) {
@@ -60,6 +65,7 @@ class _LoginScreenState extends BaseStatefulWidgetState<LoginScreen> {
                   child: Padding(
                     padding: const EdgeInsets.all(24.0),
                     child: Form(
+                      key: _formKey,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.stretch,
